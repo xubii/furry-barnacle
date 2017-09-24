@@ -1,6 +1,8 @@
 package com.unitedInt.inventory.dto;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable{
     private Long id;
     private String productName;
     private String quantityType;
