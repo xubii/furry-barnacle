@@ -2,7 +2,7 @@ package com.unitedInt.inventory.dto;
 
 import java.io.Serializable;
 
-public class Product implements Serializable{
+public class ProductDto {
     private Long id;
     private String productName;
     private String quantityType;
@@ -10,6 +10,14 @@ public class Product implements Serializable{
     private Double unitPrice;
     private Double pricePerCrtn;
     private Long quantityPerCrtn;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getProductName() {
         return productName;
